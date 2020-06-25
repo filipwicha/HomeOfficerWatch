@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC14472424A526E200D08469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14472324A526E200D08469 /* AppDelegate.swift */; };
+		DC14472624A526E200D08469 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14472524A526E200D08469 /* SceneDelegate.swift */; };
+		DC14472824A526E200D08469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14472724A526E200D08469 /* ContentView.swift */; };
+		DC14472A24A526E400D08469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC14472924A526E400D08469 /* Assets.xcassets */; };
+		DC14472D24A526E400D08469 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC14472C24A526E400D08469 /* Preview Assets.xcassets */; };
+		DC14473024A526E400D08469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC14472E24A526E400D08469 /* LaunchScreen.storyboard */; };
+		DC14473524A526E500D08469 /* HomeOfficerWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DC14473424A526E500D08469 /* HomeOfficerWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC14473B24A526E500D08469 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC14473924A526E500D08469 /* Interface.storyboard */; };
+		DC14473D24A526E600D08469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC14473C24A526E600D08469 /* Assets.xcassets */; };
+		DC14474424A526E600D08469 /* HomeOfficerWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC14474324A526E600D08469 /* HomeOfficerWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC14474924A526E600D08469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14474824A526E600D08469 /* ContentView.swift */; };
+		DC14474B24A526E600D08469 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14474A24A526E600D08469 /* HostingController.swift */; };
+		DC14474D24A526E600D08469 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14474C24A526E600D08469 /* ExtensionDelegate.swift */; };
+		DC14474F24A526E600D08469 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14474E24A526E600D08469 /* NotificationController.swift */; };
+		DC14475124A526E600D08469 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14475024A526E600D08469 /* NotificationView.swift */; };
+		DC14475324A526E800D08469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC14475224A526E800D08469 /* Assets.xcassets */; };
+		DC14475624A526E800D08469 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC14475524A526E800D08469 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC14473624A526E500D08469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC14471824A526E200D08469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC14473324A526E500D08469;
+			remoteInfo = "HomeOfficerWatch WatchKit App";
+		};
+		DC14474524A526E600D08469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC14471824A526E200D08469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC14474224A526E600D08469;
+			remoteInfo = "HomeOfficerWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC14475E24A526E800D08469 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC14474424A526E600D08469 /* HomeOfficerWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC14476224A526E800D08469 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DC14473524A526E500D08469 /* HomeOfficerWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC14472024A526E200D08469 /* HomeOfficerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeOfficerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC14472324A526E200D08469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC14472524A526E200D08469 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC14472724A526E200D08469 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC14472924A526E400D08469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC14472C24A526E400D08469 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC14472F24A526E400D08469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC14473124A526E400D08469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC14473424A526E500D08469 /* HomeOfficerWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeOfficerWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC14473A24A526E500D08469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DC14473C24A526E600D08469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC14473E24A526E600D08469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC14474324A526E600D08469 /* HomeOfficerWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HomeOfficerWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC14474824A526E600D08469 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC14474A24A526E600D08469 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		DC14474C24A526E600D08469 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DC14474E24A526E600D08469 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DC14475024A526E600D08469 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		DC14475224A526E800D08469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC14475524A526E800D08469 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC14475724A526E800D08469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC14475824A526E800D08469 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC14471D24A526E200D08469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC14474024A526E600D08469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC14471724A526E200D08469 = {
+			isa = PBXGroup;
+			children = (
+				DC14472224A526E200D08469 /* HomeOfficerWatch */,
+				DC14473824A526E500D08469 /* HomeOfficerWatch WatchKit App */,
+				DC14474724A526E600D08469 /* HomeOfficerWatch WatchKit Extension */,
+				DC14472124A526E200D08469 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC14472124A526E200D08469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC14472024A526E200D08469 /* HomeOfficerWatch.app */,
+				DC14473424A526E500D08469 /* HomeOfficerWatch WatchKit App.app */,
+				DC14474324A526E600D08469 /* HomeOfficerWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC14472224A526E200D08469 /* HomeOfficerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DC14472324A526E200D08469 /* AppDelegate.swift */,
+				DC14472524A526E200D08469 /* SceneDelegate.swift */,
+				DC14472724A526E200D08469 /* ContentView.swift */,
+				DC14472924A526E400D08469 /* Assets.xcassets */,
+				DC14472E24A526E400D08469 /* LaunchScreen.storyboard */,
+				DC14473124A526E400D08469 /* Info.plist */,
+				DC14472B24A526E400D08469 /* Preview Content */,
+			);
+			path = HomeOfficerWatch;
+			sourceTree = "<group>";
+		};
+		DC14472B24A526E400D08469 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC14472C24A526E400D08469 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC14473824A526E500D08469 /* HomeOfficerWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DC14473924A526E500D08469 /* Interface.storyboard */,
+				DC14473C24A526E600D08469 /* Assets.xcassets */,
+				DC14473E24A526E600D08469 /* Info.plist */,
+			);
+			path = "HomeOfficerWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		DC14474724A526E600D08469 /* HomeOfficerWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DC14474824A526E600D08469 /* ContentView.swift */,
+				DC14474A24A526E600D08469 /* HostingController.swift */,
+				DC14474C24A526E600D08469 /* ExtensionDelegate.swift */,
+				DC14474E24A526E600D08469 /* NotificationController.swift */,
+				DC14475024A526E600D08469 /* NotificationView.swift */,
+				DC14475224A526E800D08469 /* Assets.xcassets */,
+				DC14475724A526E800D08469 /* Info.plist */,
+				DC14475824A526E800D08469 /* PushNotificationPayload.apns */,
+				DC14475424A526E800D08469 /* Preview Content */,
+			);
+			path = "HomeOfficerWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DC14475424A526E800D08469 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC14475524A526E800D08469 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC14471F24A526E200D08469 /* HomeOfficerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC14476324A526E800D08469 /* Build configuration list for PBXNativeTarget "HomeOfficerWatch" */;
+			buildPhases = (
+				DC14471C24A526E200D08469 /* Sources */,
+				DC14471D24A526E200D08469 /* Frameworks */,
+				DC14471E24A526E200D08469 /* Resources */,
+				DC14476224A526E800D08469 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC14473724A526E500D08469 /* PBXTargetDependency */,
+			);
+			name = HomeOfficerWatch;
+			productName = HomeOfficerWatch;
+			productReference = DC14472024A526E200D08469 /* HomeOfficerWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC14473324A526E500D08469 /* HomeOfficerWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC14475F24A526E800D08469 /* Build configuration list for PBXNativeTarget "HomeOfficerWatch WatchKit App" */;
+			buildPhases = (
+				DC14473224A526E500D08469 /* Resources */,
+				DC14475E24A526E800D08469 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC14474624A526E600D08469 /* PBXTargetDependency */,
+			);
+			name = "HomeOfficerWatch WatchKit App";
+			productName = "HomeOfficerWatch WatchKit App";
+			productReference = DC14473424A526E500D08469 /* HomeOfficerWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DC14474224A526E600D08469 /* HomeOfficerWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC14475B24A526E800D08469 /* Build configuration list for PBXNativeTarget "HomeOfficerWatch WatchKit Extension" */;
+			buildPhases = (
+				DC14473F24A526E600D08469 /* Sources */,
+				DC14474024A526E600D08469 /* Frameworks */,
+				DC14474124A526E600D08469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HomeOfficerWatch WatchKit Extension";
+			productName = "HomeOfficerWatch WatchKit Extension";
+			productReference = DC14474324A526E600D08469 /* HomeOfficerWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC14471824A526E200D08469 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Filip Wicha";
+				TargetAttributes = {
+					DC14471F24A526E200D08469 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					DC14473324A526E500D08469 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					DC14474224A526E600D08469 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = DC14471B24A526E200D08469 /* Build configuration list for PBXProject "HomeOfficerWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC14471724A526E200D08469;
+			productRefGroup = DC14472124A526E200D08469 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC14471F24A526E200D08469 /* HomeOfficerWatch */,
+				DC14473324A526E500D08469 /* HomeOfficerWatch WatchKit App */,
+				DC14474224A526E600D08469 /* HomeOfficerWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC14471E24A526E200D08469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC14473024A526E400D08469 /* LaunchScreen.storyboard in Resources */,
+				DC14472D24A526E400D08469 /* Preview Assets.xcassets in Resources */,
+				DC14472A24A526E400D08469 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC14473224A526E500D08469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC14473D24A526E600D08469 /* Assets.xcassets in Resources */,
+				DC14473B24A526E500D08469 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC14474124A526E600D08469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC14475624A526E800D08469 /* Preview Assets.xcassets in Resources */,
+				DC14475324A526E800D08469 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC14471C24A526E200D08469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC14472424A526E200D08469 /* AppDelegate.swift in Sources */,
+				DC14472624A526E200D08469 /* SceneDelegate.swift in Sources */,
+				DC14472824A526E200D08469 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC14473F24A526E600D08469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC14474B24A526E600D08469 /* HostingController.swift in Sources */,
+				DC14474924A526E600D08469 /* ContentView.swift in Sources */,
+				DC14474F24A526E600D08469 /* NotificationController.swift in Sources */,
+				DC14474D24A526E600D08469 /* ExtensionDelegate.swift in Sources */,
+				DC14475124A526E600D08469 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC14473724A526E500D08469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC14473324A526E500D08469 /* HomeOfficerWatch WatchKit App */;
+			targetProxy = DC14473624A526E500D08469 /* PBXContainerItemProxy */;
+		};
+		DC14474624A526E600D08469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC14474224A526E600D08469 /* HomeOfficerWatch WatchKit Extension */;
+			targetProxy = DC14474524A526E600D08469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC14472E24A526E400D08469 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC14472F24A526E400D08469 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC14473924A526E500D08469 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC14473A24A526E500D08469 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC14475924A526E800D08469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC14475A24A526E800D08469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC14475C24A526E800D08469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeOfficerWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 26839986X2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HomeOfficerWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HomeOfficerWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		DC14475D24A526E800D08469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeOfficerWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 26839986X2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "HomeOfficerWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HomeOfficerWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		DC14476024A526E800D08469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26839986X2;
+				IBSC_MODULE = HomeOfficerWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HomeOfficerWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HomeOfficerWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		DC14476124A526E800D08469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26839986X2;
+				IBSC_MODULE = HomeOfficerWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HomeOfficerWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HomeOfficerWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		DC14476424A526E800D08469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeOfficerWatch/Preview Content\"";
+				DEVELOPMENT_TEAM = 26839986X2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HomeOfficerWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HomeOfficerWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC14476524A526E800D08469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"HomeOfficerWatch/Preview Content\"";
+				DEVELOPMENT_TEAM = 26839986X2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = HomeOfficerWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.HomeOfficerWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC14471B24A526E200D08469 /* Build configuration list for PBXProject "HomeOfficerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC14475924A526E800D08469 /* Debug */,
+				DC14475A24A526E800D08469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC14475B24A526E800D08469 /* Build configuration list for PBXNativeTarget "HomeOfficerWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC14475C24A526E800D08469 /* Debug */,
+				DC14475D24A526E800D08469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC14475F24A526E800D08469 /* Build configuration list for PBXNativeTarget "HomeOfficerWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC14476024A526E800D08469 /* Debug */,
+				DC14476124A526E800D08469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC14476324A526E800D08469 /* Build configuration list for PBXNativeTarget "HomeOfficerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC14476424A526E800D08469 /* Debug */,
+				DC14476524A526E800D08469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC14471824A526E200D08469 /* Project object */;
+}

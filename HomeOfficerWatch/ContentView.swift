@@ -9,13 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var basicViewModel: BasicViewModel = BasicViewModel()
+
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack{
+            Text(self.basicViewModel.time).onReceive(timer) { _ in
+                self.basicViewModel.getTime()
+            }
+            
+            Button(action: {
+                self.basicViewModel.change()
+            }) {
+               Text("Click me")
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.colorScheme, .dark)
     }
 }

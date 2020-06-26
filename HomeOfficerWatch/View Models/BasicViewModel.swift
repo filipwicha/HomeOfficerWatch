@@ -9,11 +9,13 @@
 import Foundation
 
 class BasicViewModel: ObservableObject {
+       
+    @Published var timeStamp: TimeStampViewModel = TimeStampViewModel(timeStamp: TimeStamp(id: 0, uuid: "Node1", relay: false, power_switch: false, date: getCurrentDateString()))
+    // "2000-01-01T00:00:00.000Z"
     
-    @Published var timeStamp: TimeStampViewModel = TimeStampViewModel(timeStamp: TimeStamp(id: 0, uuid: "Node1", relay: false, power_switch: false, date: "2000-01-01T00:00:00.000Z"))
-//    = TimeStampViewModel(TimeStamp(id: 0, uuid: "Node1", relay: false, power_switch: false, date: "2000-01-01T00:00:00.000Z"))
+    @Published var time = (differenceString: "00:00:00", h: 0, m:0, s:0, percentOfRegularPost: 0.0)
     
-    @Published var time = "00:00"
+    @Published var regularPost: Int = 8
 
     init() {
         check()
@@ -24,8 +26,6 @@ class BasicViewModel: ObservableObject {
         Webservice().check { timeStamp in
             if let timeStamp = timeStamp {
                 self.timeStamp = TimeStampViewModel.init(timeStamp: timeStamp)
-            } else {
-                self.timeStamp = TimeStampViewModel.init(timeStamp: TimeStamp(id: 0, uuid: "Node1", relay: false, power_switch: false, date: "2000-01-01T00:00:00.000Z"))
             }
         }
     }
@@ -39,14 +39,28 @@ class BasicViewModel: ObservableObject {
         }
     }
     
-    func getTime() {
+    func changeTime() {
 
         let difference = Calendar.current.dateComponents([.hour, .minute, .second], from: timeStamp.date, to: Date())
-        let formattedString = String(format: "%02ld:%02ld:%02ld", difference.hour! - 2 /* "-2" because of the timezone change between server */, difference.minute!,  difference.second!)
-        self.time = formattedString
+        
+        let h = difference.hour! - 2 /* "-2" because of the timezone change between server */
+        let m = difference.minute!
+        let s = difference.second!
+        let secondsWorking: Double = Double((h * 3600 + m * 60 + s))
+        let regularPostSeconds = Double(regularPost) * 3600.0
+        self.time.differenceString = String(format: "%02ld:%02ld:%02ld", h, m,  s)
+        self.time.percentOfRegularPost =  secondsWorking / regularPostSeconds
+        self.time.h = h
+        self.time.m = m
+        self.time.s = s
     }
-    
-    
+}
+
+func getCurrentDateString() -> String{
+    let today = Date()
+    let formatter1 = DateFormatter()
+    formatter1.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    return formatter1.string(from: today)
 }
 
 class TimeStampViewModel {
